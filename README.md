@@ -1,4 +1,4 @@
-# Discord.py
+# Discord_user.py
 Discord user bot api that written on python
 
 ![Discord.py](https://cdn.vox-cdn.com/thumbor/eB-VJmegFUSajrkLzV6koIHUsFM=/34x0:1467x750/fit-in/1200x630/cdn.vox-cdn.com/uploads/chorus_asset/file/22508340/Discord_IAP_KeyVisuals_Header_02.jpg)
