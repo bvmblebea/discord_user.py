@@ -1,5 +1,5 @@
 # Discord_user.py
-Discord user bot api that written on python
+UserBot-API for discord social network
 
 ## Example:
 ```python3
