@@ -1,5 +1,5 @@
 # Discord_user.py
-UserBot-API for discord social network
+Web-API for [discord](https://discord.com) social network
 
 ## Example:
 ```python3
