@@ -25,7 +25,7 @@ class DiscordUser:
 		}
 		response = requests.post(
 			f"{self.api}/auth/login",
-			data=data,
+			json=data,
 			headers=self.headers).json()
 		if "token" in response:
 			self.token = response["token"]
@@ -105,7 +105,7 @@ class DiscordUser:
 		}
 		return requests.patch(
 			f"{self.api}/users/@me",
-			data=data,
+			json=data,
 			headers=self.headers).json()
 
 	def change_status(
@@ -120,7 +120,7 @@ class DiscordUser:
 		}
 		return requests.patch(
 			f"{self.api}/users/@me/settings",
-			data=data,
+			json=data,
 			headers=self.headers).json()
 
 	def send_message(
@@ -132,7 +132,7 @@ class DiscordUser:
 		}
 		return requests.post(
 			f"{self.api}/channels/{channel_id}/messages",
-			data=data,
+			json=data,
 			headers=self.headers).json()
 
 	def delete_message(
@@ -181,7 +181,7 @@ class DiscordUser:
 		}
 		return requests.patch(
 			f"{self.api}/channels/{channel_id}/messages/{message_id}",
-			data=data,
+			json=data,
 			headers=self.headers).json()
 
 	def ban_user_from_guild(
@@ -211,7 +211,7 @@ class DiscordUser:
 		}
 		return requests.post(
 			f"{self.api}/guilds/{guild_id}/roles",
-			data=data,
+			json=data,
 			headers=self.headers).json()
 
 	def join_guild(self, invite: str) -> dict:
@@ -235,7 +235,7 @@ class DiscordUser:
 		}
 		return requests.patch(
 			f"{self.api}/users/@me",
-			data=data,
+			json=data,
 			headers=self.headers).json()
 
 	def change_password(
@@ -248,5 +248,5 @@ class DiscordUser:
 		}
 		return requests.patch(
 			f"{self.api}/users/@me",
-			data=data,
+			json=data,
 			headers=self.headers).json()
